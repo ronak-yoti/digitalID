@@ -10,7 +10,7 @@ app.use(urlencoded({ extended: false }));
 app.use(json());
 
 app.get("/", function (req, res) {
-  res.sendFile("/Users/sinhaath/Desktop/dynamicqr/index.html");
+  res.sendFile("/Users/khangro/Documents/dynamicqr/index.html");
 });
 
 const options = {

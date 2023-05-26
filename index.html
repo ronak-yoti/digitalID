@@ -16,13 +16,13 @@
         
     <script src="https://www.yoti.com/share/client/"></script>
     <script>
-        let url = fetch("https://hooks.prismatic.io/trigger/SW5zdGFuY2VGbG93Q29uZmlnOmZmY2Y3ZGMzLWZmZGEtNGU3MS04NTM2LWIxMmVkY2ZjYWVmNA==").then(res => {
+        let url = fetch("https://hooks.prismatic.io/trigger/SW5zdGFuY2VGbG93Q29uZmlnOmZmY2Y3ZGMzLWZmZGEtNGU3MS04NTM2LWIxMmVkY2ZjYWVmNA==?prismatic-prefer-direct-sync-json-response=true").then(res => {
             res.json().then(r=>{
                 window.Yoti.Share.init({
                     elements: [
                         {
                             domId: "xxx",
-                            shareUrl: r,
+                            shareUrl: 'https://code.yoti.com/CAEaJGY3NWVlMTIxLWYzYjItNDQxMC04NmFlLTRmMmJlZmNmMTJiZDAC',
                             clientSdkId: "a9dee257-76fd-410c-866c-1afd4bb673c9",
                             displayLearnMoreLink: true,
                         },
